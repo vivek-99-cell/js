@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+// setTimeout(function()
+// {
+//     // alert("hello mamu");
+//     open("https://www.facebook.com/");
+// }, 1000);
+
+
+// setInterval(function()
+// {
+//     // document.write("hello world");
+//     open("https://www.facebook.com/");
+// },100000);
+
+let count =0;
+let timer = setInterval(function(){
+    document.write("hello world<br>");
+    count++;
+
+    if(count===5){
+        clearInterval(timer);
+    }
+}, 5000);
+    </script>
+</body>
+</html>

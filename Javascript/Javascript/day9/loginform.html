@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label >Enter User Name</label>
+        <input type="text" id="username">
+        <label>Enter Password</label>
+        <input type="password" placeholder="password" id="passworddata">
+        <button onclick="submitdetails()">Submit</button>
+    </form>
+
+    <script>
+        function submitdetails(){
+            event.preventDefault();
+            let usernamedata = document.getElementById("username").value;
+            let passworddata = document.getElementById("passworddata").value;
+
+            console.log(usernamedata);
+            console.log(passworddata);
+
+            localStorage.setltem("username", usernamedata);
+            localStorage.setltem("userpassword", passworddata);
+        }
+    </script>
+</body>
+</html>
