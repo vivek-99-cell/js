@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>Calculator</h1>
+        <label >Enter 1st Number</label>
+        <input type="number" placeholder="number" id="n1">
+        <br><br>
+        <label >Enter 2nd Number</label>
+        <input type="number" placeholder="number" id="n2">
+        <br><br>
+        <h1 id="output"></h1>
+
+        <button onclick="calculator('+')">+</button>
+        <button onclick="calculator('-')">-</button>
+        <button onclick="calculator('*')">*</button>
+        <button onclick="calculator('/')">/</button>
+        <button onclick="calculator('%')">%</button>
+
+
+    
+    
+    <script>
+        function calculator(operator)
+        {
+            let n1=parseFloat(document.getElementById("n1").value);
+             let n2=parseFloat(document.getElementById("n2").value);
+            let output;
+
+            if(operator==='+'){
+                output=n1+n2;
+            }
+            else if(operator==='-'){
+                output=n1-n2;
+            }
+            else if(operator==='*'){
+                output=n1*n2;
+            }
+            else if(operator==='/'){
+                output=n1/n2;
+            }
+            else if(operator==='%'){
+                output=n1%n2;
+            }
+            document.getElementById('output').innerHTML='Result ='+ output;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //default function(no parameter and no return value)
+        function demo(){
+            console.log("hii");
+        }
+
+        demo();//calling function
+
+        //with parameter and no return value
+        function sum(a,b){
+            let x=a+b;
+            console.log(x);
+        }
+
+        sum(1,2);
+        sum(5,4);
+
+       /* function userdata(age, name){
+            console.log("user age is" + age + "and name is" + name);
+        }
+
+        userdata(26, "vivek");*/
+
+        //no parameter and return value
+        function greet(){
+            return "Welcome";
+        }
+        console.log(greet());
+
+
+        let y=greet();
+        console.log(y);
+
+        //with parameter with return type
+        function multi(y,b){
+            return y*b;
+        }
+        console.log(multi(4,4));
+
+    </script>
+</body>
+</html>
